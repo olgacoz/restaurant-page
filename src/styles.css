@@ -1,3 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+ol, ul {
+  list-style: none;
+}
+
 body {
-  background-color: blue;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; /* Improve text rendering */
+  min-height: 100vh;
+  
+  /* font-family: ''; */
+  background-image: url('./images/pizza-plate-bg.jpg');
+  background-size: 100% 100%;
+  position: relative;
+}
+
+header > nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center; 
+  background-color: rgba(0, 0, 0, 0.50);
+  padding: 10px 0;
+}
+
+button {
+  padding: 5px 10px;
+}
+
+#content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 15px;
+}
+
+#our-motto > footer {
+  display: flex;
+  justify-content: end;
 }
