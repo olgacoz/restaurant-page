@@ -6,34 +6,29 @@
   box-sizing: border-box;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
 body {
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased; /* Improve text rendering */
+  /* Improve text rendering */
+  -webkit-font-smoothing: antialiased;
   min-height: 100vh;
 
   display: flex;
   flex-direction: column;
-  
-  background-image: url('./images/pizza-plate-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-header > nav {
-  display: flex;
-  gap: 20px;
-  justify-content: center; 
-  background-color: rgba(0, 0, 0, 0.50);
-  padding: 10px 0;
 }
 
 button {
@@ -41,7 +36,21 @@ button {
   cursor: pointer;
 }
 
-#content {
+header>nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.50);
+  padding: 10px 0;
+}
+
+/* Home */
+
+.home-active {
+  background-image: url('./images/pizza-plate-bg.jpg');
+}
+
+.home-active #content {
   margin: auto;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.260);
@@ -49,7 +58,7 @@ button {
   border-radius: 8px;
 }
 
-#our-motto > footer {
+#home-content #our-motto>footer {
   display: flex;
   justify-content: end;
   font-style: italic;

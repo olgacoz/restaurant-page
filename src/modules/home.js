@@ -1,10 +1,21 @@
-export default function renderHome(container) {
+export default function renderHome() {
+  const body = document.querySelector('body');
+  const content = document.querySelector('#content');
+
+  const div = document.createElement('div');
   const restaurantName = document.createElement('h1');
   const motto = document.createElement('blockquote');
   const mottoText = document.createElement('p');
   const mottoOwner = document.createElement('footer');
   const openingHours = document.createElement('h2');
   const days = document.createElement('ul');
+
+  content.replaceChildren(); // Clear the content container
+
+  body.className = ''; // Clear all classes on the body
+  body.classList.add('home-active');
+
+  div.id = 'home-content';
 
   restaurantName.textContent = "Gusteau's Pizzaria";
 
@@ -29,7 +40,6 @@ export default function renderHome(container) {
   dayElements[5].textContent = 'Saturday: 11:00-00:00';
   dayElements[6].textContent = 'Sunday: 11:00-22:00';
 
-  container.append(restaurantName, motto, openingHours, days);
-
-  return container;
+  div.append(restaurantName, motto, openingHours, days);
+  content.appendChild(div);
 }
