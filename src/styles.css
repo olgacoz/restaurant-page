@@ -18,11 +18,14 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased; /* Improve text rendering */
   min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
   
-  /* font-family: ''; */
   background-image: url('./images/pizza-plate-bg.jpg');
-  background-size: 100% 100%;
-  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 header > nav {
@@ -35,18 +38,20 @@ header > nav {
 
 button {
   padding: 5px 10px;
+  cursor: pointer;
 }
 
 #content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.260);
   padding: 15px;
+  border-radius: 8px;
 }
 
 #our-motto > footer {
   display: flex;
   justify-content: end;
+  font-style: italic;
+  font-size: 0.9rem;
 }

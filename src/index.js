@@ -1,3 +1,6 @@
 import './styles.css';
+import renderHome from './modules/home.js';
 
-console.log('yo');
+const content = document.querySelector('#content');
+
+renderHome(content);
