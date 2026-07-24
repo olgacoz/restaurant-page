@@ -23,12 +23,6 @@ body {
   /* Improve text rendering */
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 button {
@@ -48,6 +42,12 @@ header>nav {
 
 .home-active {
   background-image: url('./images/pizza-plate-bg.jpg');
+
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .home-active #content {
@@ -58,9 +58,51 @@ header>nav {
   border-radius: 8px;
 }
 
-#home-content #our-motto>footer {
+.home-active #our-motto>footer {
   display: flex;
   justify-content: end;
   font-style: italic;
   font-size: 0.9rem;
+}
+
+/* Menu */
+.menu-active #menu-content {
+  padding: 5px 10px;
+}
+
+.menu-active h1 {
+  text-align: center;
+}
+
+.menu-active h2 {
+  margin: 10px 0px;
+}
+
+.menu-active .menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.menu-active .menu .menu-item {
+  display: flex;
+  gap: 20px;
+  margin: 0 10px;
+  background-color: rgba(201, 201, 201, 0.3);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.menu-active .menu-item .info-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.menu-active .menu-item .item-img {
+  max-width: 200px;
+  height: 200px;
+  border-radius: 8px;
 }
