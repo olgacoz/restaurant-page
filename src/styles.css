@@ -41,7 +41,7 @@ header>nav {
 /* Home */
 
 .home-active {
-  background-image: url('./images/pizza-plate-bg.jpg');
+  background-image: url('./assets/images/home-bg.jpg');
 
   display: flex;
   flex-direction: column;
@@ -105,3 +105,38 @@ header>nav {
   height: 200px;
   border-radius: 8px;
 }
+
+/* Contact */
+.contact-active {
+  background-image: url('./assets/images/contact-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-active #content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-active #contact-content {
+  color: white;
+  background-color: rgba(4, 0, 0, 0.20);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-active h1 {
+  text-align: center;
+}
+
+.contact-active .head-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.contact-active .container {
+  text-align: center;
+} 

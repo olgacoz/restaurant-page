@@ -1,16 +1,16 @@
 // pizza imgs
-import pizzaCapricciosa from '../images/menu/pizza/pizza-capricciosa.jpg';
-import pizzaMargherita from '../images/menu/pizza/pizza-margherita.jpg';
-import pizzaMarinara from '../images/menu/pizza/pizza-marinara.jpg';
-import pizzaQuattroFormaggi from '../images/menu/pizza/pizza-quattro-formaggi.jpg';
-import pizzaQuattroStagioni from '../images/menu/pizza/pizza-quattro-stagioni.jpg';
-import seafoodPizza from '../images/menu/pizza/seafood-pizza.jpg';
+import pizzaCapricciosa from '../assets/images/menu/pizza/pizza-capricciosa.jpg';
+import pizzaMargherita from '../assets/images/menu/pizza/pizza-margherita.jpg';
+import pizzaMarinara from '../assets/images/menu/pizza/pizza-marinara.jpg';
+import pizzaQuattroFormaggi from '../assets/images/menu/pizza/pizza-quattro-formaggi.jpg';
+import pizzaQuattroStagioni from '../assets/images/menu/pizza/pizza-quattro-stagioni.jpg';
+import seafoodPizza from '../assets/images/menu/pizza/seafood-pizza.jpg';
 
 // red wine imgs
-import duckhornCabernet from '../images/menu/wine/red/duckhorn-napa-valley-cabernet-sauvignon.webp';
+import duckhornCabernet from '../assets/images/menu/wine/red/duckhorn-napa-valley-cabernet-sauvignon.webp';
 
 // white wine imgs
-import santaMargheritaPinotGrigio from '../images/menu/wine/white/santa-margherita-alto-adige-pinot-grigio.png';
+import santaMargheritaPinotGrigio from '../assets/images/menu/wine/white/santa-margherita-alto-adige-pinot-grigio.png';
 
 export default function renderMenu() {
   const body = document.querySelector('body');
