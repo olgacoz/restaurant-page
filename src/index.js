@@ -5,6 +5,8 @@ import renderContact from './modules/contact.js';
 
 const buttons = document.querySelectorAll('nav > button');
 
+renderHome(); // Initial loading of homepage
+
 buttons.forEach(button => {
   button.addEventListener('click', () => {
     switch(button.id) {
