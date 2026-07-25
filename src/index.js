@@ -3,6 +3,20 @@ import renderHome from './modules/home.js';
 import renderMenu from './modules/menu.js'
 import renderContact from './modules/contact.js';
 
-// renderHome();
-// renderMenu();
-renderContact();
+const buttons = document.querySelectorAll('nav > button');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    switch(button.id) {
+      case 'home-btn':
+        renderHome();
+        break;
+      case 'menu-btn':
+        renderMenu();
+        break;
+      case 'contact-btn':
+        renderContact();
+        break;
+    }
+  });
+});
