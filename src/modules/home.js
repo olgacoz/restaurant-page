@@ -33,12 +33,12 @@ export default function renderHome() {
   const dayElements = days.children;
 
   dayElements[0].textContent = 'Monday: Closed';
-  dayElements[1].textContent = 'Tuesday: 16:00-00:00';
-  dayElements[2].textContent = 'Wednesday: 16:00-00:00';
-  dayElements[3].textContent = 'Thursday: 11:30-00:00';
-  dayElements[4].textContent = 'Friday: 11:30-00:00';
-  dayElements[5].textContent = 'Saturday: 11:00-00:00';
-  dayElements[6].textContent = 'Sunday: 11:00-22:00';
+  dayElements[1].textContent = 'Tuesday: 16:00 - 00:00';
+  dayElements[2].textContent = 'Wednesday: 16:00 - 00:00';
+  dayElements[3].textContent = 'Thursday: 11:30 - 00:00';
+  dayElements[4].textContent = 'Friday: 11:30 - 00:00';
+  dayElements[5].textContent = 'Saturday: 11:00 - 00:00';
+  dayElements[6].textContent = 'Sunday: 11:00 - 22:00';
 
   div.append(restaurantName, motto, openingHours, days);
   content.appendChild(div);
