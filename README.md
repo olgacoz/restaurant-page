@@ -11,18 +11,16 @@ The goal of this project is to build an interactive restaurant website where the
 ### Key Features
 * **Dynamic Tabbed Navigation:** Switch between pages seamlessly without full page reloads.
 * **Modular Architecture:** Clean separation of views into dedicated ES6 modules.
-* **Webpack Build Pipeline:** Bundling JS, injecting CSS, processing webp/jpg images, and generating `index.html` dynamically via `HtmlWebpackPlugin`.
-* **Responsive Design:** Optimized across mobile, tablet, and desktop viewports.
 
 ## 🛠️ Tech Stack
 
 * **Language:** JavaScript (ES6 Modules), HTML5, CSS3
-* **Bundler:** Webpack
-  * **Plugins:** `HtmlWebpackPlugin`
-  * **Loaders:** `style-loader`, `css-loader`
-  * **Asset Management:** Webpack Asset Modules (`type: "asset/resource"`)
-* **Dev Environment:** `webpack-dev-server` with `eval-source-map`
-* **Hosting & Deployment:** GitHub Pages
+* **Bundler:** Webpack 5
+* **Configuration & Tools:**
+  * **Common (webpack.common.js)**: `webpack-merge`, `HtmlWebpackPlugin`, Webpack Asset Modules (`type: "asset/resource"`)
+  * **Development (webpack.dev.js)**: `webpack-dev-server`, `style-loader`, `css-loader`, `eval-source-map`
+  * **Production (webpack.prod.js)**: `MiniCssExtractPlugin`, `CssMinimizerPlugin`, `source-map`, Cache Busting
+* **Deployment:** GitHub Pages
 
 ## 🚀 Running the Project Locally
 
@@ -39,11 +37,7 @@ npm install
 ### Run the dev server
 
 ```bash
-npx webpack serve
+npm run dev
 ```
 
-Open http://localhost:8080 in your browser.
-
-## ℹ️ Note on Webpack Build Warnings
-
-When running `npx webpack` or `npx webpack serve`, you may notice performance warnings (WARNING in asset size limit / entrypoint size limit). These occur because high-resolution image assets exceed Webpack's default 244 KiB threshold. These warnings do not affect site functionality and can be safely ignored.
+This starts webpack-dev-server and opens http://localhost:8080 automatically.
